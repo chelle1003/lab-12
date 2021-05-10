@@ -1,0 +1,25 @@
+print("^^^^^ Tidak Suka Ini Itu ^^^^^")
+print()
+nama1=input("Masukkan nama anak pertama:")
+nama2=input("Masukkan nama anak kedua:")
+print("Masukkan daftar Makanan yang tidak disukai oleh",nama1,"dan",nama2)
+print()
+makan=set()
+makan1=set()
+anak1=int(input("Masukkan jumlah jenis makanan yang tidak disukai oleh anak pertama:"))
+anak2=int(input("Masukkan jumlah jenis makanan yang tidak disukai olehanak kedua:"))
+print()
+print("Masukkan jenis makanan yang tidak disukai oleh",nama1,":")
+for i in range (anak1):
+    m=input('')
+    makan.add(m)
+print("Masukkan jenis makanan yang tidak disukai oleh",nama2,":")
+for i in range (anak2):
+    m=input('') 
+    makan.add(m)
+beda1=makan-makan1
+beda2=makan1-makan
+beda1.update(beda2)
+print()
+print("Jenis makanan berbeda yang tidak disukai oleh anak kembar tersebut adalah:")
+print(beda1)
